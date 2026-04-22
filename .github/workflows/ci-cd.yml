@@ -48,7 +48,6 @@ jobs:
       - name: Deploy to staging
 	env:
 	  DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
-
         run: |
 	 echo "  DEPLOY TO STAGGING  "
 	 echo "DB_PASSWORD is set: ${{ secrets.DB_PASSWORD != '' }}"
